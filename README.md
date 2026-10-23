@@ -19,6 +19,10 @@ A live, Kahoot-style multiplayer quiz. Students join from their own phones
 - Host-only Pause / Resume (button, or Space / P)
 - Every 5th wrong answer: the jump scare **plus an error buzzer** (Web Audio, no sound file; vibrates too
   on phones that support it). Audio unlocks on the player's first tap. An iPhone on silent mode stays silent.
+- Host lobby music: "Back at It" by Dyalla (Epidemic Sound), played through YouTube's official embedded
+  player (Dyalla - Topic upload) on the host screen only. Plays in the lobby and during each question's response
+  time; pauses on the answer reveal, while paused, and on the results. The player stays visible (YouTube's embed
+  rules require at least 200x200); "Music off" switches it off. Players' phones stay silent.
 - Live leaderboard, final podium, automatic winner
 
 Live site: <https://gaitquiz.vercel.app>

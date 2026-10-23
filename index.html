@@ -558,7 +558,7 @@
     if(note){
       if(musicError != null) note.textContent = "The video can't play here (YouTube error " + musicError + ").";
       else if(want && ps !== 1 && ps !== 3) note.textContent = "Click anywhere to start the music.";
-      else note.textContent = want ? "Playing while players answer." : "Paused until the next question.";
+      else note.textContent = want ? (state().status === "lobby" ? "Playing in the lobby." : "Playing while players answer.") : "Paused until the next question.";
     }
   }
   // Browsers only start sound after a click: retry on the host's next click (Start game, Next question...)
